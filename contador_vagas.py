@@ -5,7 +5,8 @@ def contarVagasDisponiveis(estacionamento):
     """Conta quantas vagas estao com status Livre."""
     vagasLivres = 0
     for vaga in estacionamento:
-        if vaga.status == "Livre":
+        status_livre = vaga.status if isinstance(vaga.status, bool) else str(vaga.status).strip().lower() == "livre"
+        if status_livre:
             vagasLivres += 1
 
     return vagasLivres
