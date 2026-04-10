@@ -1,12 +1,18 @@
-def estadoVaga(status):
-    if status == "o":
-        return "Vaga Ocupada"
-    elif status == "l": 
-        return "Vaga Livre"
+from main import estacionamento
 
-def tipoVaga(tipo):
-    if tipo == "c":
-        return "Vaga Comum"
-    elif tipo == "r":
-        return "Vaga Reservada"
+def menu():
+    print("Menu de Vagas")
+    print("1. Listar Vagas")
+    print("2. Alterar status de uma vaga")
+    print("3. Sair")
     
+def alterar_status(vagas):
+    id_vaga = int(input("Digite o ID da vaga que deseja alterar: "))
+
+    estacionamento[id_vaga].alterar_status(not estacionamento[id_vaga].status)
+
+    print("Vaga não encontrada.")
+    
+def sair():
+    print("Saindo do sistema...")
+    exit()
