@@ -1,8 +1,3 @@
-# Trabalho-de-Engenharia-de-Software
-
-# Trabalho-de-Engenharia-de-Software
-
-
 # Trabalho de Engenharia de Software
 
 Sistema simples de controle de vagas de estacionamento feito em Python.
@@ -42,4 +37,4 @@ python contador_vagas..py
 
 ## Observação
 
-O projeto ainda está em uma versão básica. Se quiser, eu posso também organizar o README com imagens, exemplo de uso e diagrama das classes.
+O projeto ainda está em uma versão básica...
